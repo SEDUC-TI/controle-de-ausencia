@@ -2,11 +2,6 @@ import React from 'react';
 import seducalagoaslogo from '../assets/images/seducalagoaslogo.svg'
 
 const Login: React.FC = () => {
-  return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </div>
-  );
 
 	return (
 		<div className="container max-w-full w-screen h-screen bg-blue flex flex-col justify-center items-center ">
