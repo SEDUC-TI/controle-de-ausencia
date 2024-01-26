@@ -1,6 +1,6 @@
 import React from 'react';
 import seducalagoaslogoazul from '../../assets/images/seducalagoaslogoazul.svg';
-import menu from '../../assets/icons/menu.svg';
+import {MenuOutlined} from '@mui/icons-material';
 
 interface nameProp{
     name: string;
@@ -36,7 +36,7 @@ const Header: React.FC<nameProp> = ({name}) =>{
 
                 <div>
                     {/* Falta deixar o botão funcional */}
-                    <img className='' src={menu} alt="" />
+                    <MenuOutlined/>
                 </div>
             </div>
         </div>
