@@ -1,4 +1,6 @@
 import React from 'react';
+import { ArrowForward } from '@mui/icons-material';
+import { Button } from 'primereact/button';
 
 const NewPassword: React.FC = () =>{
     
@@ -33,7 +35,7 @@ const NewPassword: React.FC = () =>{
                     
                     <button className="w-[217px] h-[48.55px] rounded-[20px] font-semibold text-lg text-white 
                                        bg-gradient-to-r from-blue to-hoverblue border-2 border-border focus:border-hoverblue 
-                                       focus:outline-none font-['Mulish']" type="submit">AVANÇAR ➡️</button>
+                                       focus:outline-none font-['Mulish']" type="submit"> AVANÇAR <Button icon={<ArrowForward className="p-button-icon-right" />}/> </button>
                 </div>
                 
             </div>
