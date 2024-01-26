@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes, /* Navigate */ } from 'react-router-dom';
-import Login from '../pages/Login';
+import Login from '../pages/Login/Login';
 // import { useIsAuthenticated, useAuthUser } from 'react-auth-kit';
 
 const Rotas = () => {
