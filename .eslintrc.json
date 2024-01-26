@@ -27,8 +27,8 @@
   },
   "plugins": ["@typescript-eslint", "react"],
   "rules": {
-	"react/react-in-jsx-scope": 0,
-    "indent": ["error", "tab"],
+    "react/react-in-jsx-scope": 0,
+    "indent": "off",
     "linebreak-style": 0,
     "quotes": ["error", "single"],
     "semi": ["error", "always"]
