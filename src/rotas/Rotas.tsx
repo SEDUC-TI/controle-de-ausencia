@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes, /* Navigate */ } from 'react-router-dom';
 import Login from '../pages/Login/Login';
+import CreateAdmin from '../pages/Admin/CreateAdmin';
 // import { useIsAuthenticated, useAuthUser } from 'react-auth-kit';
 
 const Rotas = () => {
@@ -7,6 +8,7 @@ const Rotas = () => {
 		<Router>
 			<Routes>
 				<Route path='/' element={ <Login /> } />
+				<Route path='/criarusuario' element={ <CreateAdmin />} />
 			</Routes>
 		</Router>
 	);
