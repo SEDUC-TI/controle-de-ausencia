@@ -2,9 +2,25 @@ import React from 'react';
 import Header from '../components/header/Header'
 import {SearchOutlined} from '@mui/icons-material';
 import { Select, MenuItem } from "@mui/material";
+import SelectDropdown from '../components/selects/SelectDropdown';
 
 const Usuarios: React.FC = () =>{
 
+    const options_GEE = {
+        options: ['1° GEE', '2° GEE', '3° GEE', '4° GEE',
+                  '5° GEE', '6° GEE', '7° GEE', '8° GEE',
+                  '9° GEE', '10° GEE', '11° GEE', '12° GEE',
+                  '13° GEE']
+    };
+    const options_Vinculo = {
+        options: ['Efetivo', 'Contratado', 'Comissionado', 'Assessor Administrativo']
+    };
+    const options_Lotacao = {
+        options: ['Não se aplica', 'Lista de escolas da GEE', 'GEE'] //dar uma get nas escolas da GEE selecionada
+    };
+    const options_Cargo = {
+        options: ['Lista dos cargos possíveis'] //dar um get nos cargos dos servidores
+    }
     return(
         <div className="container max-w-full w-screen h-screen flex flex-col items-center">
             
@@ -33,49 +49,22 @@ const Usuarios: React.FC = () =>{
                         </p>
                     </div>
 
-                    <div className="container flex w-[1207px] h-[63px] bg-orange">
-                        
+                    <div className="container flex w-[1207px] h-[63px]">
+
                         <div className="container flex flex-col w-[300px]">
-                            <p className='text-concrete'>
-                                GEE
-                            </p>
-
-                            <div>
-
-                                <Select className='w-[211px] h-[40px] rounded-[8px]' variant="outlined">
-                                    <MenuItem>1° GEE</MenuItem>
-                                    <MenuItem>2° GEE</MenuItem>
-                                    <MenuItem>3° GEE</MenuItem>
-                                    <MenuItem>4° GEE</MenuItem>
-                                    <MenuItem>5° GEE</MenuItem>
-                                    <MenuItem>6° GEE</MenuItem>
-                                    <MenuItem>7° GEE</MenuItem>
-                                    <MenuItem>8° GEE</MenuItem>
-                                    <MenuItem>9° GEE</MenuItem>
-                                    <MenuItem>10° GEE</MenuItem>
-                                    <MenuItem>11° GEE</MenuItem>
-                                    <MenuItem>12° GEE</MenuItem>
-                                    <MenuItem>13° GEE</MenuItem>
-                                </Select>
-                            </div>
-
+                            <SelectDropdown title={'GEE'} options={options_GEE.options}/>
                         </div>
 
                         <div className="container flex flex-col w-[300px]">
-                            <p className='text-concrete'>
-                                Vínculo
-                            </p>
+                            <SelectDropdown title='Vínculo' options={options_Vinculo.options}/>
+                        </div>
 
-                            <div>
-
-                                <Select className='w-[211px] h-[40px] rounded-[8px]' variant="outlined">
-                                    <MenuItem>Professor</MenuItem>
-                                    <MenuItem>Vigia</MenuItem>
-                                    <MenuItem>Diretor</MenuItem>
-                                    <MenuItem>Material Tailwind Angular</MenuItem>
-                                    <MenuItem>Material Tailwind Svelte</MenuItem>
-                                </Select>
-                            </div>
+                        <div className="container flex flex-col w-[300px]">
+                            <SelectDropdown title='Lotação' options={options_Lotacao.options}/>
+                        </div>
+                        
+                        <div className="container flex flex-col w-[300px]">
+                            <SelectDropdown title='Cargo Atual' options={options_Cargo.options}/>
                         </div>
                     </div>
 
