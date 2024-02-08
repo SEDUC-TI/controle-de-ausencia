@@ -22,12 +22,14 @@ const NewPassword: React.FC = () =>{
                     <div className="mb-2">
                         <p>SENHA</p>
                     </div>
-                    <input className="mb-6 p-4 bg-white rounded-[5px] h-10 border-2 border-border mb-6" type="password" name="password" id="" placeholder='Digite sua senha' />
 
+                    <input className="mb-6 bg-white rounded-[5px] h-10 border-2 border-border mb-6 px-5" type="password" name="password" id="" />
+                    
                     <div className="mb-2">
                         <p>CONFIRMAÇÃO DE SENHA</p>
                     </div>
-                    <input className="mb-6 p-4 bg-white rounded-[5px] h-10 border-2 border-border mb-6" type="password" name="password" id="" placeholder='Confirme a sua senha'  />
+                    <input className="mb-6 bg-white rounded-[5px] h-10 border-2 border-border mb-6 px-5" type="password" name="password" id=""  />
+
                 </div>
 
                 <div className="container flex w-[217px] h-[64px] justify-center">
