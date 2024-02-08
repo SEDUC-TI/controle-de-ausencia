@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes, /* Navigate */ } from 'react-ro
 
 import Login from '../pages/Login/Login';
 import CreateAdmin from '../pages/Admin/CreateAdmin';
-import Usuarios from '../pages/Usuarios';
+import Usuarios from '../pages/Usuários/Usuarios';
 import NewPassword from '../pages/NewPassword';
 // import { useIsAuthenticated, useAuthUser } from 'react-auth-kit';
 

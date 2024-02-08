@@ -42,17 +42,18 @@ const Header: React.FC<nameProp> = ({name}) =>{
                 <div className="h-[46px] border-l-2 border-concrete ml-[600px] justify-self-end"/>
             </div>
 
+            <div className="container flex w-[400px] h-[40px] items-center space-x-[90px]">
+                <p className='ml-[70px]'>
+                    BEM-VINDO, {name}
+                </p>
 
-        <img className="h-12 hidden lg:block" src="tete" alt="" />
-      </button>
                 <div>
                     {/* Falta deixar o botão funcional */}
                     <MenuOutlined/>
                 </div>
             </div>
         </div>
-      </nav>
-      <Button size="small" text rounded />
-    </header>
-  );
-}
+    );
+};
+
+export default Header;
