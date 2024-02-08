@@ -24,15 +24,15 @@ const Header: React.FC<nameProp> = ({name}) =>{
 
                 <div className='container flex space-x-24'>
                     
-                    <p className='text-blue ml-[20px]'>
+                    <p className='text-blue flex text-[20px] ml-[20px]'>
                         INÍCIO
                     </p>
 
                     <div className='flex space-x-1'>
-                        <p className='text-blue'>
+                        <p className='text-blue flex text-[20px]'>
                             CADASTRAR
                         </p>
-                        <p className='text-blue'>
+                        <p className='text-blue flex text-[20px]'>
                             ADMINISTRADOR
                         </p>
                     </div>
