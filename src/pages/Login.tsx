@@ -1,8 +1,7 @@
 import React from 'react';
-import seducalagoaslogo from '../assets/images/seducalagoaslogo.svg'
+import seducalagoaslogo from '../assets/images/seducalagoaslogo.svg';
 
 const Login: React.FC = () => {
-
 	return (
 		<div className="container max-w-full w-screen h-screen bg-blue flex flex-col justify-center items-center ">
 
