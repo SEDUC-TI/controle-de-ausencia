@@ -22,11 +22,24 @@ const Header: React.FC<nameProp> = ({name}) =>{
             <div className="container flex w-[1005px] items-center">
                 <div className="h-[46px] border-l-2 border-concrete"/>
 
-                <p className='text-blue ml-[20px]'>
-                    INÍCIO
-                </p>
+                <div className='container flex space-x-24'>
+                    
+                    <p className='text-blue ml-[20px]'>
+                        INÍCIO
+                    </p>
 
-                <div className="h-[46px] border-l-2 border-concrete ml-[1000px] justify-self-end"/>
+                    <div className='flex space-x-1'>
+                        <p className='text-blue'>
+                            CADASTRAR
+                        </p>
+                        <p className='text-blue'>
+                            ADMINISTRADOR
+                        </p>
+                    </div>
+                    
+                </div>
+                
+                <div className="h-[46px] border-l-2 border-concrete ml-[600px] justify-self-end"/>
             </div>
 
             <div className="container flex w-[400px] h-[40px] items-center space-x-[90px]">
