@@ -3,7 +3,7 @@ import arrow from '../../assets/icons/arrow_back_curve.svg'
 
 const Header_servi: React.FC = () => {
     return(
-        <div className="container flex w-[1400px] h-[40px] justify-between ">
+        <div className="container flex w-full h-[40px] justify-between ">
                 
             <div className="container flex w-[121px] h-[28px] space-x-4">
                 
