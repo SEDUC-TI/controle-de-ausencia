@@ -24,48 +24,37 @@ const Atestados: React.FC = () => {
           </p>
         </div>
 
-        <div className="container flex w-full h-[20px] mt-20 justify-between">
-          <p className="text-concrete">NÚMERO DO PROCESSO</p>
-
-          <p className="text-concrete">STATUS</p>
-
-          <p className="text-concrete">INÍCIO</p>
-
-          <p className="text-concrete">FIM</p>
-
-          <p className="text-concrete">DURAÇÃO TOTAL</p>
-
-          <p className="text-white">Editar</p>
-
-          <p className="text-white">Deletar</p>
-        </div>
-
-        <div className="container flex flex-col w-full h-[273px] justify-between mt-12 overflow-y-auto">
-          
-          {Object.keys(atestados).map((chave, index) => (
-
-            <div className="container flex mb-[48px]" key={index}>
-
-              <div className="container flex">{atestados[chave].process_number}</div>
-
-              <div className="container ">{atestados[chave].status}</div>
-
-              <div className="container  text-blue font-bold">{atestados[chave].start}</div>
-
-              <div className="container text-blue font-bold">{atestados[chave].end}</div>
-
-              <div className="container">{atestados[chave].duration} dias</div>
-
-              <div className="container text-concrete"> <Edit /> </div>
-
-              <div className="container text-concrete"> <Delete /> </div>
-              
-            </div>
-          ))}
+        <div className="container w-full h-[320px] mt-10 mb-16 overflow-y-auto">
+          <table className="w-full">
+            <thead>
+              <tr className="text-left">
+                <th className="p-8">NÚMERO DO PROCESSO</th>
+                <th className="p-8">STATUS</th>
+                <th className="p-8">INÍCIO</th>
+                <th className="p-8">FIM</th>
+                <th className="p-8">DURAÇÃO TOTAL</th>
+                <th className="p-8"></th>
+                <th className="p-8"></th>
+              </tr>
+            </thead>
+            <tbody>
+              {Object.keys(atestados).map((chave, index) => (
+                <tr key={index}>
+                  <td className="p-8">{atestados[chave].process_number}</td>
+                  <td className="p-8">{atestados[chave].status}</td>
+                  <td className="p-8 text-blue">{atestados[chave].start}</td>
+                  <td className="p-8 text-blue">{atestados[chave].end}</td>
+                  <td className="p-8">{atestados[chave].duration}</td>
+                  <td className="p-8 text-concrete"><Edit /></td>
+                  <td className="p-8 text-concrete"><Delete /></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
 
         <div className="container flex w-[161px] h-[40px] rounded-[10px] border-blue border-2 
-                        self-start justify-around items-center mt-[20px]">
+                        self-start justify-around items-center">
           
           <Add className=" bg-blue rounded text-white"/>
 
