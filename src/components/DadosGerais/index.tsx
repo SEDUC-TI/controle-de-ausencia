@@ -3,6 +3,7 @@ import Input from '../Input';
 import Button from '../Button';
 import Lotacao from '../Lotacao';
 // import Lotacao from '../Lotacao';
+import SaveImage from  '../../assets/icons/save.svg';
 
 const DadosGerais: React.FC = () => {
     const [selecao, setSeleçao] = useState('matricula_1');
@@ -10,7 +11,7 @@ const DadosGerais: React.FC = () => {
 
     return (
         <div>
-            <form id='dados_usuario' className='flex flex-col gap-20 pb-5'>
+            <form id='dados_usuario' className='flex flex-col gap-20 pb-5 items-end'>
                 <div className='flex flex-col gap-5'>
                     <div className='grid grid-cols-9 gap-4'>
                         <Input nome='nome' id='nome' label='NOME' borderColor='border-blue' width='col-span-5'/>
@@ -50,6 +51,7 @@ const DadosGerais: React.FC = () => {
                     }
                 </div>
                 <Lotacao/>
+                <Button id='salvar' type='submit' text='SALVAR' width='w-56' image={SaveImage}/>
             </form>
         </div>
     );
