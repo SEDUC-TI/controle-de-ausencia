@@ -17,9 +17,9 @@ const Usuarios: React.FC = () =>{
             
             <Header name= "Welson"/>
 
-            <div className="container flex flex-col items-center w-[1800px] h-[950px]">
+            <div className="container flex flex-col items-center w-[1800px] h-[950px] ">
                 
-                <div className="container flex w-[157px] h-[40px] mt-[40px] border-concrete border-b-2 justify-center">
+                <div className="container flex w-[157px] h-[40px]  border-concrete border-b-2 justify-center">
                     
                     <div className='text-blue font-black text-2xl '>
                         <p>Servidores</p>
@@ -29,15 +29,14 @@ const Usuarios: React.FC = () =>{
 
                 <div className="container mt-[50px] flex flex-col w-[1257px] h-[155px] items-center space-y-[45px]">
                     
-                    <div className="container flex row w-[1200px] h-[42px] border-2 rounded-[8px] border-border items-center ">
+                    <div className=" flex w-[1200px] h-[42px] border-2 rounded-xl border-blue items-center ">
                         
                         <div className='px-3'>
                             <SearchOutlined text-concrete/>
                         </div>
-                        
-                        <p className='text-concrete'>
-                            Buscar
-                        </p>
+
+                        <input className='w-full h-full focus:outline-none bg-transparent pe-4' placeholder='Buscar'/>
+
                     </div>
 
                     <div className="container flex w-[1207px] h-[63px]">
