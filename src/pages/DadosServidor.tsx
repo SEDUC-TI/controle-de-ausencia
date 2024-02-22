@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Header from '../components/header/Header';
 import Back from '../assets/icons/back.svg';
 import DadosGerais from '../components/DadosGerais';
-import Atestados from '../components/Atestados';
 
 
 const DadosServidor: React.FC = () => {
@@ -50,7 +49,9 @@ const DadosServidor: React.FC = () => {
           ?
            <DadosGerais/>
           :
-          <Atestados/>
+          <div>
+            atestados
+          </div>
         }
 
       </div>
