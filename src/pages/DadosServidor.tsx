@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from '../components/header/Header';
 import Back from '../assets/icons/back.svg';
 import DadosGerais from '../components/DadosGerais';
+import Atestados from '../components/Atestados';
 
 
 const DadosServidor: React.FC = () => {
@@ -9,7 +10,7 @@ const DadosServidor: React.FC = () => {
 
   return (
     <>
-      <Header/>
+      <Header name=''/>
       <div className='w-4/5 mx-auto ' >
         <div className='flex flex-row justify-between mt-12 mb-20'>
           <div className='flex flex-row items-center gap-1 cursor-pointer'>
@@ -49,9 +50,7 @@ const DadosServidor: React.FC = () => {
           ?
            <DadosGerais/>
           :
-          <div>
-            atestados
-          </div>
+          <Atestados/>
         }
 
       </div>

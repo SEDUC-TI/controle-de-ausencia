@@ -5,7 +5,6 @@ import CreateAdmin from '../pages/Admin/CreateAdmin';
 import Usuarios from '../pages/Usuários/Usuarios';
 import NewPassword from '../pages/NewPassword';
 import DadosServidor from '../pages/DadosServidor';
-import Atestados from '../pages/Atestados/Atestados';
 
 // import { useIsAuthenticated, useAuthUser } from 'react-auth-kit';
 
@@ -18,7 +17,6 @@ const Rotas = () => {
 				<Route path='/users' element={ <Usuarios />} />
 				<Route path='/criarusuario' element={ <CreateAdmin />} />
 				<Route path='/dadosservidor' element={<DadosServidor/>}/>
-				<Route path='/atestados' element={<Atestados/>}/>
 			</Routes>
 		</Router>
 	);

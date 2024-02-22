@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../components/header/Header'
+import Header from '../../components/header/Header';
 import {SearchOutlined} from '@mui/icons-material';
 import SelectDropdown from '../../components/selects/SelectDropdown';
 import { options_Cargo, options_GEE, options_Lotacao, options_Vinculo } from './users_consts';
