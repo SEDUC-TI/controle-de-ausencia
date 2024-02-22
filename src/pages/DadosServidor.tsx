@@ -10,7 +10,7 @@ const DadosServidor: React.FC = () => {
 
   return (
     <>
-      <Header name=''/>
+      <Header name='João'/>
       <div className='w-4/5 mx-auto ' >
         <div className='flex flex-row justify-between mt-12 mb-20'>
           <div className='flex flex-row items-center gap-1 cursor-pointer'>

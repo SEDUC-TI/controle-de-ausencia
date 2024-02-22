@@ -5,6 +5,11 @@ import SelectDropdown from '../../components/selects/SelectDropdown';
 import { options_Cargo, options_GEE, options_Lotacao, options_Vinculo } from './users_consts';
 import { servidores } from './users_data';
 
+const getBarWidthClass = (dias: number): number => {
+    const diasA = (dias/32)*100
+    return diasA;
+};
+
 const Usuarios: React.FC = () =>{
     
     return(
@@ -27,7 +32,7 @@ const Usuarios: React.FC = () =>{
                     <div className="container flex row w-[1200px] h-[42px] border-2 rounded-[8px] border-border items-center ">
                         
                         <div className='px-3'>
-                            <SearchOutlined style={{ color: 'concrete' }}/>
+                            <SearchOutlined text-concrete/>
                         </div>
                         
                         <p className='text-concrete'>
@@ -86,7 +91,9 @@ const Usuarios: React.FC = () =>{
 
                                     <div className='w-1/3 flex space-x-2 '>
                                         <div className="flex mt-2 w-4/5 h-3/6 bg-concrete rounded-full h-2.5">
-                                            <div className="bg-blue h-2.5 rounded-full w-[50%]"></div>
+                                            <div className={`bg-blue h-2.5 rounded-full `} style={{
+                                                'width': `${getBarWidthClass(servidores[chave].dias)}%`,
+                                            }}></div>
                                         </div>
                                         <p>{servidores[chave].dias} dias</p>
                                     </div>
