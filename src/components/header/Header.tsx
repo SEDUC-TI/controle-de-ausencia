@@ -21,6 +21,7 @@ const Header: React.FC<nameProp> = ({name}) =>{
 
                 <div className="w-[1px] h-[46px] border-l-2 border-concrete"/>
 
+
                 <div className='container flex items-center w-3/5 h-[100px] justify-around'>
                     
                     <p className='text-blue flex text-[20px] ml-[20px]'>
