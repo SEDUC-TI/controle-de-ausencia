@@ -15,7 +15,19 @@ export default {
 				silver: '#bdc3c7', // In need for darker borders, use this color
 				red: '#f63b42', // Used for errors and critical warnings.
 				green: '#14ae5c', // Used for success messages.
-			  },
+			},
+			gridTemplateColumns: {
+				// Simple 16 column grid
+				'24': 'repeat(24, minmax(0, 1fr))',
+			},
+			gridColumnStart: {
+				'13': '13',
+				'14': '14',
+				'15': '15',
+				'16': '16',
+				'17': '17',
+				'18': '18',
+			},
 		},
 	},
 	plugins: [],

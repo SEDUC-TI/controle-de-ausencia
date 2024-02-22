@@ -1,11 +1,11 @@
-import { Button } from "primereact/button";
-import logoEstado from "../../assets/images/alagoasbrasaoazul.svg";
+import { Button } from 'primereact/button';
+import logoEstado from '../../assets/images/seducalagoaslogoazul.svg';
 
 export default function Header() {
   return (
     <header
       style={{
-        position: "sticky",
+        position: 'sticky',
         top: 0,
         zIndex: 100,
       }}
@@ -35,7 +35,7 @@ export default function Header() {
       <nav className="hidden lg:flex gap-6 mr-6">
         <div className="hidden lg:flex items-center justify-center gap-5">
           <p className="text-lg text-[--midnight]">
-            {"Bem-vindo, "}
+            {'Bem-vindo, '}
             <b className="text-blue">usuario</b>!
           </p>
         </div>
